@@ -98,7 +98,7 @@ define(function(require, exports, module) {
             }
         },
         render : function(){
-            $("#logoAmount").text(_.gameTwoLogo);
+            //$("#logoAmount").text(_.gameTwoLogo);
             $("#gameTwoTips").removeClass("hide");
 
             this._super();

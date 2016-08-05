@@ -592,7 +592,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background: url(../image/guide/bg.jpg) no-repeat center center;
   background-size: 100% 100%;
 }
@@ -621,7 +621,7 @@ body {
   width: 25%;
 }
 .guideTitle {
-  top: 50%;
+  top: 42%;
   -webkit-transform: translate(0%, -50%);
   -moz-transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
@@ -631,10 +631,10 @@ body {
   width: 65.78%;
 }
 .guideBtn {
-  bottom: 8%;
+  bottom: 23%;
 }
 .guideBtn img {
-  width: 38.6%;
+  width: 50%;
 }
 /* iphone4等小屏幕手机  */
 @media (max-height: 500px) {
@@ -777,11 +777,11 @@ body {
 }
 .alertType01Btn,
 .alertType02Btn {
-  bottom: 14%;
-  left: 33%;
-  width: 35%;
-  height: 18%;
-  cursor: pointer;
+    bottom: 14%;
+    left: 33%;
+    width: 35%;
+    height: 18%;
+    cursor: pointer;
 }
 .tryAgain .alertType01Btn {
   bottom: 11%;
@@ -1641,4 +1641,85 @@ body {
 #gameTwo2 .logo_3.on:after {
   top: 3px;
   left: 9px;
+}
+
+
+/*add by curry*/
+.gameOneStart{
+    background: url(../image/game1/rule_bg.jpg);
+    background-size: 100% 100%;
+}
+.gameGuide{
+    position: absolute;
+    display: none;
+}
+.game_guide_01{
+    left: 6%;
+    top: 25%;
+    width: 24%;
+}
+.game_guide_01 img{
+    width: 100%;
+}
+.game_guide_02{
+    left: 23%;
+    top: 10%;
+    width: 33%;
+}
+.game_guide_02 img{
+    width: 100%;
+}
+.game_guide_03{
+    right: 24%;
+    top: 24%;
+    width: 35%;
+}
+.game_guide_03 img{
+    width: 100%;
+}
+.game_guide_04{
+    width: 23%;
+    right: 4%;
+    top: 12%;
+}
+.game_guide_04 img{
+    width: 100%;
+}
+.game_guide_05{
+    height: 60%;
+    left: 81%;
+    top: 61%;
+    display: inline-block;
+    width: auto;
+}
+
+.game_readygo{
+    bottom: -6%;
+    left: 30%;
+    width: 57%;
+    height: 18%;
+    cursor: pointer;
+}
+
+@media (max-height: 330px) {
+    .game_guide_01{
+        left: 8%;
+        top: 25%;
+        width: 21%;
+    }
+    .game_guide_02{
+        left: 23%;
+        top: 7%;
+        width: 30%;
+    }
+    .game_guide_03{
+        right: 24%;
+        top: 22%;
+        width: 32%;
+    }
+    .game_guide_04{
+        width: 23%;
+        right: 4%;
+        top: 9%;
+    }
 }

@@ -74,6 +74,14 @@ define(function(require, exports, module) {
                 _.pageNeedDir = 2;
                 self.screenControler.handleScreenTips();
 
+                //四个图像一次出现
+                $(".game_guide_01").fadeIn();
+                setTimeout('$(".game_guide_02").fadeIn()',1000);
+                setTimeout('$(".game_guide_03").fadeIn()',2000);
+                setTimeout('$(".game_guide_04").fadeIn()',3000);
+                setTimeout('$(".game_guide_05").fadeIn()',4000);
+
+
                 self.stageGameOne.initialize("#gameOne",function(){
                     //console.log("游戏一结束");
 

@@ -17,7 +17,7 @@
     <div id="guidePage" class="guidePage fullScreen hide">
         <div class="guideBlueArea">
             <div class="imgCenterBox absoulteControl guideLogo">
-                <img src="image/guide/logo.png" alt="">
+                <!--<img src="image/guide/logo.png" alt="">-->
             </div>
             <div class="imgCenterBox absoulteControl guideTitle">
                 <img src="image/guide/title.png" alt="">
@@ -26,9 +26,9 @@
                 <img src="image/guide/btn.png" alt="">
             </div>
         </div>
-        <div class="guideWhiteArea">
+        <!--<div class="guideWhiteArea">
             <img src="image/guide/ad.png" class="guideAd" alt="">
-        </div>
+        </div>-->
     </div>
     <!-- 引导页(end) -->
 
@@ -237,9 +237,21 @@
 
     <!-- 游戏1开始弹框(start) -->
     <div id="gameOneTips" class="alertType01 gameOneStart fullScreen hide">
-        <div class="alertType01Main absoulteControl imgCenterBox">
-            <img src="image/alert/game1_start.png" class="alertType01Bg" alt="">
-            <p class="alertType01Btn absoulteControl"></p>
+        <div class="gameGuide game_guide_01">
+            <img src="image/game1/a-1.png">
+        </div>
+        <div class="gameGuide game_guide_02">
+            <img src="image/game1/a-2.png">
+        </div>
+        <div class="gameGuide game_guide_03">
+            <img src="image/game1/a-3.png">
+        </div>
+        <div class="gameGuide game_guide_04">
+            <img src="image/game1/a-4.png">
+        </div>
+        <div class="alertType01Main absoulteControl imgCenterBox game_guide_05" style="display: none">
+            <img src="image/game1/a-5.png" class="alertType01Bg" alt="">
+            <p class="alertType01Btn absoulteControl game_readygo"></p>
         </div>
     </div>
     <!-- 游戏1开始弹框(end) -->
@@ -248,7 +260,7 @@
     <div id="gameTwoTips" class="alertType01 gameTwoTips fullScreen hide">
         <div class="alertType01Main absoulteControl imgCenterBox">
             <img src="image/alert/game2_start.png" class="alertType01Bg" alt="">
-            <div id="logoAmount" class="logoAmount">2</div>
+            <div id="logoAmount" class="logoAmount"><!--2--></div>
             <p class="alertType01Btn absoulteControl"></p>
         </div>
     </div>
@@ -300,7 +312,7 @@
                 <input class="u_name" id="useranme" maxlength="50"/>
                 <input class="u_tel" id="phone" value="" maxlength="11" type="tel"/>
             </form> -->
-            <p style="bottom: 14%;width: 56%;left: 22%;" class="alertType02Btn absoulteControl" id="checkSite"></p>
+            <p style="bottom:4%;width:38%;left:31%;" class="alertType02Btn absoulteControl" id="checkSite"></p>
             <!-- <p class="alertType02Btn absoulteControl" id="subForm"></p> -->
         </div>
     </div>
