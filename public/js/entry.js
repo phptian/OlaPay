@@ -84,7 +84,7 @@ define(function(require, exports, module) {
 
                 self.stageGameOne.initialize("#gameOne",function(){
                     //console.log("游戏一结束");
-
+                    self.soundControler.playBgm();
                     self.elm.trigger("stage:gameTwo");
                 });
             });

@@ -4,6 +4,7 @@ define(function(require, exports, module) {
     * @desc 引用模块
     */
     const Stage = require("../generic/Stage");
+    const SoundControler = require("./SoundControler");
 
     /**
      * @desc 场景-游戏一
@@ -53,7 +54,11 @@ define(function(require, exports, module) {
                             nowIndex++;
                         }else{
                             //全对了
-                            //console.log("全对了");
+                            console.log("全对了");
+                            var sc = new SoundControler();
+                            sc.stopBgm();
+                            $("#audio")[0].play();
+
                             self.elm.find(".gameOnetag").off("singleTap");
 
                             setTimeout(function(){

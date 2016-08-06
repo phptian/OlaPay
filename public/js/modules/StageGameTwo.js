@@ -4,6 +4,7 @@ define(function(require, exports, module) {
     * @desc 引用模块
     */
     const Stage = require("../generic/Stage");
+    const SoundControler = require("./SoundControler");
 
     /**
      * @desc 场景-游戏二
@@ -59,7 +60,11 @@ define(function(require, exports, module) {
 
                         //全对了
                         if(answer.length>=self.getRandomArray.length){
-                            //console.log("全对了");
+                            console.log("game2全对了");
+                            var sc = new SoundControler();
+                            sc.stopBgm();
+                            $("#audio")[0].play();
+
                             setTimeout(function(){
                                 self.elm.trigger("gameTwo:over");
                             }, 300);
@@ -79,7 +84,8 @@ define(function(require, exports, module) {
                 $("#gameTwoSucc").removeClass("hide");
                 $("#gameTwoSucc .alertType02Btn").one("singleTap",function(){
                     $("#gameTwoSucc").addClass("hide");
-
+                    var sc = new SoundControler();
+                    sc.playBgm();
                     self.elm.trigger("gameTwo:userinfo");
                 });
             });
